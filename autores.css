@@ -26,10 +26,30 @@ body {
 }
 
 header {
-    background-color: red;
-    width: 100%;
-    height: 8%;
+    display: flex;
 
+    background-image: url(imagens/cabeçalho.webp);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-right-radius: 5px; 
+    border-top-left-radius: 5px; 
+
+    width: 100%;
+    /* Responsividade muito foda: (mínimo, responsividade, máximo) */
+    height: clamp(45px, 4.5vw, 80px);
+
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+header > a {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #60342d;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
 main {
