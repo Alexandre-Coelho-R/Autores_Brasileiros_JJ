@@ -1,69 +1,76 @@
-* {
-    box-sizing: border-box;
-}
+    * {
+        box-sizing: border-box;
+    }
 
-html, body {
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-}
+    html, body {
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
-body {
-    display: flex;
-    min-height: 100vh;
-    background-image: url(imagens/imagem-de-fundo.webp);
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-    justify-content: center;
-}
+    body {
+        display: flex;
+        min-height: 100vh;
+        background-image: url(imagens/imagem-de-fundo.webp);
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        justify-content: center;
+    }
 
-#container {
-    display: flex;
-    width: 95vw;
-    height: 99vh;
-    flex-direction: column;
-}
+    #container {
+        display: flex;
+        width: 95vw;
+        height: 99vh;
+        flex-direction: column;
+    }
 
-header {
-    display: flex;
+    header {
+        display: flex;
 
-    background-image: url(imagens/cabeçalho.webp);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-top-right-radius: 5px; 
-    border-top-left-radius: 5px; 
+        background-image: url(imagens/cabeçalho.webp);
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-top-right-radius: 5px; 
+        border-top-left-radius: 5px; 
 
-    width: 100%;
-    /* Responsividade muito foda: (mínimo, responsividade, máximo) */
-    height: clamp(45px, 4.5vw, 80px);
+        width: 100%;
+        /* Responsividade muito foda: (mínimo, responsividade, máximo) */
+        height: clamp(45px, 4.5vw, 80px);
 
+        align-items: center;
+        justify-content: center;
 
-    align-items: center;
-    justify-content: center;
+    }
 
-}
+    header > a {
+        font-family: Georgia, 'Times New Roman', serif;
+        color: #60251c;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
 
-header > a {
-    font-family: Georgia, 'Times New Roman', serif;
-    color: #60342d;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
+    main {
+        display: flex;
+        flex: 1;
+        /* Colocar uma imagem de fundo */
+    }
 
-main {
-    display: flex;
-    flex: 1;
-}
+    aside {
+        display: flex;
+        width: 35%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 
-aside {
-    background-color: rgb(30, 153, 210);
-    width: 35%;
-    height: 100%;
-}
+    aside > img {
+        width: 90%;
+        object-fit: contain;
+    }
 
-section {
-    background-color: yellow;
-    flex: 1;
-}
+    section {
+        background-color: yellow;
+        flex: 1;
+    }
