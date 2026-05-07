@@ -3,14 +3,13 @@
 }
 
 html, body {
-    min-height: 100%;
     margin: 0;
     padding: 0;
 }
 
 body {
     display: flex;
-    min-height: 100vh;
+    height: 100dvh;
     background-image: url(imagens/imagem-de-fundo.webp);
     background-size: cover;
     background-position: center;
@@ -21,14 +20,13 @@ body {
 #container {
     display: flex;
     width: 95vw;
-    height: 99vh;
+    height: 100%;
     flex-direction: column;
-    
 }
 
 header {
     display: flex;
-
+    
     background-image: url(imagens/cabeçalho.webp);
     background-size: 100% 100%;
     background-position: center;
@@ -37,12 +35,10 @@ header {
     border-top-left-radius: 5px; 
 
     width: 100%;
-    /* Responsividade muito foda: (mínimo, responsividade, máximo) */
     height: clamp(45px, 4.5vw, 80px);
 
     align-items: center;
     justify-content: center;
-
 }
 
 header > a {
@@ -55,45 +51,56 @@ header > a {
 main {
     display: flex;
     flex: 1;
+    min-height: 0;
 
-    background-image: url(imagens/borda-main.webp);
+    padding: 2rem 3rem;
+    margin: 1rem 0;
+
+    background-image: url(imagens/fundo-main-horizontal.webp);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
 
+    justify-content: center;
+    align-items: center; 
 }
 
 aside {
     display: flex;
     width: 30%;
-    height: 90%;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
 
 aside > img {
-    max-height: 100%;
+    height: 100%;
     width: 100%;
     object-fit: contain;
 }
 
-/* section não está pronta - falta muita coisa ainda */
+/* section não está pronta */
 section {
     display: flex;
-    /* flex: 1; */
-    height: 90%;
-    width: 65%;
+    flex: 1;
+    height: 100%;
     background-color: yellow;
 
 
     justify-content: center;
     align-items: center;
+
+    padding:1rem;
+
+    font-size: 0rem;
+    scrollbar-color: #8a4a23 #ead3a2;
 }
 
-/* @media (orientation: portrait){
+@media (orientation: portrait){
     aside {
         width: 0%;
     }
-} */
+    main {
+        background-image: url(imagens/fundo-main-vertical.webp);
+    }
+}
