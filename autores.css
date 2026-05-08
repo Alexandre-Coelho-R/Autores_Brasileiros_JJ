@@ -81,19 +81,30 @@ aside > img {
 
 /* section não está pronta */
 section {
-    display: flex;
     flex: 1;
     height: 100%;
-    background-color: yellow;
+    min-height: 0;
+    overflow-y: auto; /* Coloca barra vertical se precisar*/
+    overflow-x: hidden; /* Nunca deixa ter barra horizontal*/
 
-
-    justify-content: center;
+    display: flex;
+    /* justify-content: center; */
     align-items: center;
+    flex-direction: column;
 
-    padding:1rem;
-
-    font-size: 0rem;
+    padding: 1rem;
+    font-family: Georgia, 'Times New Roman', serif;
+    
+    font-size: 0.5rem;
     scrollbar-color: #8a4a23 #ead3a2;
+}
+
+section h1 {
+    font-size: 3rem;
+}
+
+section p {
+    font-size: 1rem;
 }
 
 @media (orientation: portrait){
