@@ -88,19 +88,31 @@ section {
     overflow-x: hidden; /* Nunca deixa ter barra horizontal*/
 
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
-
-    padding: 1rem;
-    font-family: Georgia, 'Times New Roman', serif;
+    padding-right: 1rem;
     
-    font-size: 0.5rem;
+    font-family: Georgia, 'Times New Roman', serif;
+    /* Não tenho certeza se uso justificado */
+    text-align: justify;
+    hyphens: auto;
+    
+    line-height: 1.7;    
+
     scrollbar-color: #8a4a23 #ead3a2;
 }
 
-section h1 {
+section > h1 {
+    text-align: center;
     font-size: 3rem;
+}
+
+section > h2 {
+    font-size: 2.5rem;
+}
+
+section > h3 {
+    font-size: 1.5rem;
 }
 
 section p {
@@ -113,5 +125,6 @@ section p {
     }
     main {
         background-image: url(imagens/fundo-main-vertical.webp);
+        padding: 1rem 2rem;
     }
 }
