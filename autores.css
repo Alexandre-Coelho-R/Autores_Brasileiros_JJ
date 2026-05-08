@@ -79,7 +79,6 @@ aside > img {
     object-fit: contain;
 }
 
-/* section não está pronta */
 section {
     flex: 1;
     height: 100%;
@@ -125,6 +124,41 @@ section > p {
     text-indent: 2rem;
 }
 
+/* Fazer imagens: */
+
+figure {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.uma-imagem {   
+    align-items: center;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.duas-imagens {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.capa-de-livro{
+    height: 25rem;
+    object-fit: contain;
+}
+
+figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
+    color: #5a3218;
+
+    width: 100%;
+}
+
+
 @media (orientation: portrait){
     aside {
         width: 0%;
@@ -136,6 +170,5 @@ section > p {
     section {
         height: 98%;
     }
-
 }
 
