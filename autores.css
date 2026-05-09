@@ -162,16 +162,14 @@ figcaption {
     font-style: italic;
     text-align: center;
     color: #5a3218;
-
     width: 100%;
 }
-
 
 /* Adaptações */
 
 @media (orientation: portrait){
     aside {
-        width: 0%;
+        display: none;
     }
     main {
         background-image: url(imagens/fundo-main-vertical.webp);
