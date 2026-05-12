@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100dvh;
+    background-image: url(imagens/imagem-de-fundo.webp);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    width: 95vw;
+    height: 95%;
+    flex-direction: column;
+
+    background-image: url(imagens/fundo-main-vertical.webp);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 1rem;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Header */
+
+header {
+    height: 100px;
+    width: 200px;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+
+    padding: 2rem 3rem;
+    margin: 1rem 0;
+
+    justify-content: center;
+    align-items: center; 
+}
+
