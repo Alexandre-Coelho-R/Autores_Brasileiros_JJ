@@ -27,6 +27,7 @@ header {
 
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: white;
 }
 
@@ -48,7 +49,17 @@ main {
 
     justify-content: center;
     align-items: center; 
-}
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    font-family: Georgia, 'Times New Roman', serif;
+    text-align: justify;
+    hyphens: auto;
+    line-height: 1.7;
+
+    scrollbar-color: #8a4a23 #ead3a2;
+}    
 
 /* Section */
 
