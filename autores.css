@@ -155,7 +155,7 @@ figcaption {
 
 /* Adaptações */
 
-@media (orientation: portrait){
+@media (orientation: portrait), (width < 700px){
     aside {
         display: none;
     }

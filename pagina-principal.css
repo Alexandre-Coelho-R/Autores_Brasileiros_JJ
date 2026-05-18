@@ -11,10 +11,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    padding: 1rem;
-
-    align-items: center;
-    justify-content: center;
+    padding: 1rem;    
 }
 
 /* Header */
@@ -24,61 +21,72 @@ header {
     display: flex;
     height: 22%;
     width: 100%;
+    min-height: 120px;
 
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
+    text-align: center;
 }
 
 header > h1 {
-    font-size: 5rem;
+    font-size: clamp(2rem, 6vw, 5rem);
     margin: 0;
 }
 
 header > h2 {
-    font-size: 1rem;
-    
+    font-size: clamp(0.6rem, 2vw, 1rem);
 }
-
 
 /* Main */
 
 main {
     background-color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.25rem 2.5rem;
+
     flex: 1;
-    min-height: 0;
     width: 100%;
-
-    /* padding: 2rem 3rem; */
-    /* margin: 1rem 0; */
-
-    justify-content: center;
-    align-items: center; 
+    padding: 1.25rem;
 
     overflow-y: auto;
     overflow-x: hidden;
-
-    font-family: Georgia, 'Times New Roman', serif;
-    text-align: justify;
-    hyphens: auto;
-    line-height: 1.7;
 
     scrollbar-color: #8a4a23 #ead3a2;
 }    
 
 /* Section */
 
-section {
-    background-color: lightgreen;
-    display: flex;
-    flex: 1;
+.card-grid {
+    width: min(100%, 400px);
+    aspect-ratio: 1/1;
+
+    justify-self: center;
+    align-self: center;
 }
 
+#clarice { background-color: hsl(0, 100%, 49%); }
+#manuel { background-color: hsla(216, 100%, 49%, 0.363); }
+#machado { background-color: hsl(309, 100%, 49%); }
+#julia { background-color: hsl(175, 100%, 49%); }
+#tomas { background-color: hsla(0, 25%, 45%, 0.489); }
+#gregorio { background-color: hsl(70, 100%, 49%); }
 
-@media (orientation: portrait){
-    header > h1 {
-        font-size: 3rem;
-    }
+
+@media (width < 720px){
+    main {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem 2rem;
+        padding: 1.25rem;
+    }   
+}
+
+@media (width < 400px){
+    main {
+        grid-template-columns: 1fr;
+        gap: 1.25rem 2rem;
+        padding: 1.25rem;
+    }   
 }
