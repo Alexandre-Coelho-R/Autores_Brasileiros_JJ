@@ -2,8 +2,8 @@
 
 #container {
     display: flex;
-    width: 95vw;
-    height: 95vh;
+    width: 96vw;
+    height: 96vh;
     flex-direction: column;
 
     background-image: url(imagens/fundo-main-vertical.webp);
@@ -17,7 +17,7 @@
 /* Header */
 
 header {
-    background-color: blue;
+    background-color: black;
     display: flex;
     height: 22%;
     width: 100%;
@@ -42,13 +42,12 @@ header > h2 {
 /* Main */
 
 main {
-    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.25rem 2.5rem;
-
+    
     flex: 1;
-    width: 100%;
+    width: 99%;
     padding: 1.25rem;
 
     overflow-y: auto;
@@ -65,6 +64,18 @@ main {
 
     justify-self: center;
     align-self: center;
+
+    transition: 0.2s;
+
+    overflow-y: hidden;
+}
+
+.card-grid:hover {
+    transform: scale(1.02);
+}
+
+a {
+    text-decoration: none;
 }
 
 #clarice { background-color: hsl(0, 100%, 49%); }
@@ -74,12 +85,12 @@ main {
 #tomas { background-color: hsla(0, 25%, 45%, 0.489); }
 #gregorio { background-color: hsl(70, 100%, 49%); }
 
+/* Adaptações */
 
 @media (width < 720px){
     main {
         grid-template-columns: 1fr 1fr;
         gap: 1.25rem 2rem;
-        padding: 1.25rem;
     }   
 }
 
@@ -87,6 +98,5 @@ main {
     main {
         grid-template-columns: 1fr;
         gap: 1.25rem 2rem;
-        padding: 1.25rem;
     }   
 }
