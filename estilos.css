@@ -10,7 +10,7 @@ html, body {
 body {
     display: flex;
     height: 100dvh;
-    background-image: url(imagens/imagem-de-fundo.webp);
+    background-image: url(imagens/geral/imagem-de-fundo.webp);
     background-size: cover;
     background-position: center;
     align-items: center;

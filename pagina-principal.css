@@ -6,7 +6,7 @@
     height: 96vh;
     flex-direction: column;
 
-    background-image: url(imagens/fundo-main-vertical.webp);
+    background-image: url(imagens/geral/fundo-main-vertical.webp);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -83,7 +83,9 @@ a {
     transform: scale(1.02);
 }
 
-img {
+/*Dentro do section*/
+
+.card-grid > img {
     width: 100%;
 }
 
@@ -94,13 +96,17 @@ aside {
     padding: 1rem;
 }
 
-#clarice { background-color: hsl(0, 100%, 49%); }
-#manuel { background-color: hsla(216, 100%, 49%, 0.363); }
-#machado { background-color: hsl(309, 100%, 49%); }
-#julia { background-color: hsl(175, 100%, 49%); }
-#tomas { background-color: hsla(0, 25%, 45%, 0.489); }
-#gregorio { background-color: hsl(70, 100%, 49%); }
+aside > h4{
+    border: 1px solid black;
+    border-radius: 3px;
+    
+}
 
+/*Temporário*/
+
+.card-grid{background-color: lightblue;}
+
+/*Ajustes para telas grandes*/
 
 @media (min-width: 1400px){
     main {

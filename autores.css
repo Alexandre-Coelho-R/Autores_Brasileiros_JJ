@@ -10,7 +10,7 @@
 header {
     display: flex;
     
-    background-image: url(imagens/cabeçalho.webp);
+    background-image: url(imagens/geral/cabeçalho.webp);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@ main {
     padding: 2rem 3rem;
     margin: 1rem 0;
 
-    background-image: url(imagens/fundo-main-horizontal.webp);
+    background-image: url(imagens/geral/fundo-main-horizontal.webp);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -155,12 +155,12 @@ figcaption {
 
 /* Adaptações */
 
-@media (orientation: portrait), (width < 700px){
+@media (orientation: portrait), (width < 900px){
     aside {
         display: none;
     }
     main {
-        background-image: url(imagens/fundo-main-vertical.webp);
+        background-image: url(imagens/geral/fundo-main-vertical.webp);
         padding: 1rem 1rem;
     }
     section {
