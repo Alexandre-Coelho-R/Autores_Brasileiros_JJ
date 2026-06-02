@@ -5,12 +5,6 @@
     width: 96vw;
     height: 96vh;
     flex-direction: column;
-
-    background-image: url(imagens/geral/fundo-main-vertical.webp);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-
     padding: 1rem;    
 }
 
@@ -67,6 +61,9 @@ a {
 .card-grid {
     width: 100%;
     aspect-ratio: 3/2;
+    
+    background-image: url(imagens/geral/fundo-main-vertical.webp);
+    background-size: 100% 100%;
 
     justify-self: center;
     align-self: center;
@@ -86,7 +83,12 @@ a {
 /*Dentro do section*/
 
 .card-grid > img {
-    width: 100%;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    border-radius: 5%;
+    margin-left: 1rem;
+
     min-height: 0;
     min-width: 0;
 }
@@ -123,10 +125,6 @@ aside > *{
     border: 1px solid black;
     border-radius: 3px;
 }
-
-/*Temporário*/
-
-.card-grid{background-color: lightblue;}
 
 /*Ajustes para telas grandes*/
 
