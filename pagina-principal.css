@@ -73,7 +73,7 @@ a {
 
     transition: 0.2s;
 
-    overflow-y: hidden;
+    overflow: hidden;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -87,19 +87,41 @@ a {
 
 .card-grid > img {
     width: 100%;
+    min-height: 0;
+    min-width: 0;
 }
 
 aside {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
-aside > h4{
+aside > *{
+    margin: 0;
+    text-align: center;
+}
+
+.nome-autor {
+    color: black;
+    margin-bottom: clamp(0.5rem, 1vw, 2rem);
+    font-size: clamp(1.3rem, 2vw, 2.3rem);
+}
+
+.descricao {
+    color: black;
+    margin-bottom: clamp(0.5rem, 1vw, 2rem);
+    font-size: clamp(1.0rem, 1.3vw, 1.6rem);
+}
+
+.explorar {
+    color: black;
+    margin-top: auto;
+    font-size: clamp(1.2rem, 1.2vw, 1.5rem);
+
     border: 1px solid black;
     border-radius: 3px;
-    
 }
 
 /*Temporário*/
