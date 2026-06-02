@@ -43,11 +43,11 @@ header > h2 {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap: 1.25rem 2.5rem;
     
     flex: 1;
-    width: 99%;
+    width: 100%;
     padding: 1.25rem;
 
     overflow-y: auto;
@@ -60,7 +60,7 @@ main {
 
 .card-grid {
     width: min(100%, 400px);
-    aspect-ratio: 1/1;
+    aspect-ratio: 3/2;
 
     justify-self: center;
     align-self: center;
@@ -76,6 +76,8 @@ main {
 
 a {
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 #clarice { background-color: hsl(0, 100%, 49%); }
@@ -84,19 +86,3 @@ a {
 #julia { background-color: hsl(175, 100%, 49%); }
 #tomas { background-color: hsla(0, 25%, 45%, 0.489); }
 #gregorio { background-color: hsl(70, 100%, 49%); }
-
-/* Adaptações */
-
-@media (width < 720px){
-    main {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.25rem 2rem;
-    }   
-}
-
-@media (width < 400px){
-    main {
-        grid-template-columns: 1fr;
-        gap: 1.25rem 2rem;
-    }   
-}
