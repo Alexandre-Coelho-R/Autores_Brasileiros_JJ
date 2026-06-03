@@ -128,11 +128,11 @@ aside > *{
     background-color: #dac7c2;
     padding: 0.35rem;
 
-    transition: 0.1s;
+    transition: 0.2s ease-out;
 }
 
 .explorar:hover{
-    transform:scale(1.10);
+    transform:scale(1.1);
 }
 
 /*Ajustes para telas grandes*/
