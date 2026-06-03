@@ -143,6 +143,12 @@ figure {
 .capa-de-livro{
     height: 25rem;
     object-fit: contain;
+    transition: 0.5s;
+    
+}
+
+.capa-de-livro:hover{
+    transform: scale(1.03);
 }
 
 figcaption {

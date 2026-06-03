@@ -126,7 +126,13 @@ aside > *{
     border: 2px solid black;
     border-radius: 3px;
     background-color: #dac7c2;
-    padding: 0.3rem;
+    padding: 0.35rem;
+
+    transition: 0.1s;
+}
+
+.explorar:hover{
+    transform:scale(1.10);
 }
 
 /*Ajustes para telas grandes*/
