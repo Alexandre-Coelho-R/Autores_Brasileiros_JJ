@@ -116,7 +116,7 @@ aside > *{
 
 .descricao {
     color: black;
-    margin-bottom: clamp(0.5rem, 1vw, 2rem);
+    margin-bottom: camp(0.5rem, 1vw, 2rem);
     font-size: clamp(1.0rem, 1.3vw, 1.6rem);
 }
 
@@ -125,8 +125,10 @@ aside > *{
     margin-top: auto;
     font-size: clamp(1.2rem, 1.2vw, 1.5rem);
 
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 3px;
+    background-color: #dac7c2;
+    padding: 0.3rem;
 }
 
 /*Ajustes para telas grandes*/
