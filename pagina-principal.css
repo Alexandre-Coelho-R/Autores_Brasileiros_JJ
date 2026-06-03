@@ -13,17 +13,17 @@
 header {
     background-image: url("imagens/geral/header-main-1.png");
     background-size: 100% 100%;
+    border-radius: 10px;
 
     display: flex;
     height: 22%;
     width: 100%;
-    min-height: 120px;
+    min-height: 150px;
 
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
-    text-align: center;
+    color: black;
 }
 
 header > h1 {
