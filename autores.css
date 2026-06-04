@@ -147,7 +147,6 @@ figure {
     height: 25rem;
     object-fit: contain;
     transition: 0.5s;
-    
 }
 
 .capa-de-livro:hover{
@@ -162,7 +161,22 @@ figcaption {
     width: 100%;
 }
 
+/* Animações */
 
+aside > img {
+    animation: aparecer 1s;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
 
 /* Adaptações */
 
