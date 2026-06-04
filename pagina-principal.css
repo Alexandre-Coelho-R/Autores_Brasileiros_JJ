@@ -31,13 +31,15 @@ header > h1 {
     font-size: clamp(2rem, 6vw, 5rem);
     margin: 0;
     font-family: "Cormorant Garamond", serif;
-
+    text-align: center;
 }
 
 header > h2 {
     font-size: clamp(0.6rem, 2vw, 1rem);
     font-family: "EB Garamond", serif;
     font-style: italic;
+    text-align: center;
+
 }
 
 /* Main */
@@ -155,18 +157,55 @@ aside > *{
 
 @media (width < 400px){
     main {
-        grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+        grid-template-columns: 1fr;
     }
 
     header > h1 {
-        font-size: clamp(1.2rem, 6vw, 5rem);
-        margin: 0;
-        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(1.7rem, 6vw, 5rem);
+        text-align: center;
     }
 
     header > h2 {
-        font-size: clamp(0.5rem, 2vw, 1rem);
-        font-family: "EB Garamond", serif;
-        font-style: italic;
+        display: none;
+    }
+
+    aside {
+        padding: 0.8rem;
+    }
+
+    .nome-autor {
+        font-size: clamp(1rem, 2vw, 2.3rem);
+    }
+
+    .descricao {
+        font-size: clamp(0.8rem, 1.3vw, 1.6rem);
+    }
+
+    .explorar {
+        font-size: clamp(1rem, 1.2vw, 1.5rem);
+        padding: 0.2rem;
+    }
+}
+
+@media (width < 300px){
+    #container {
+        padding: 0.5rem;
+    }
+
+    main {
+        padding: 0.8rem;
+    }
+
+    .nome-autor {
+        font-size: clamp(0.8rem, 2vw, 2.3rem);
+    }
+
+    .explorar {
+        font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+        padding: 0.15rem;
+    }
+
+    .descricao {
+        display: none;
     }
 }
