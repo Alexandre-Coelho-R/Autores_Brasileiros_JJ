@@ -11,7 +11,7 @@
 /* Header */
 
 header {
-    background-image: url("imagens/geral/header-main-1.png");
+    background-image: url("imagens/geral/header-main-1.webp");
     background-size: 100% 100%;
     border-radius: 10px;
     border: #dac7c2 solid 1px;
@@ -151,7 +151,7 @@ aside > *{
 
 @media (width < 1000px){
     header {
-        background-image: url("imagens/geral/header-main-2.png");
+        background-image: url("imagens/geral/header-main-2.webp");
     }
 }
 
