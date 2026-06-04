@@ -1,0 +1,249 @@
+#container {
+    display: flex;
+    width: 95vw;
+    height: 100%;
+    flex-direction: column;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    
+    background-image: url(../imagens/geral/cabeçalho.webp);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-right-radius: 5px; 
+    border-top-left-radius: 5px; 
+
+    width: 100%;
+    height: clamp(45px, 4.5vw, 80px);
+
+    align-items: center;
+    justify-content: center;
+
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #60251c;
+    font-size: 1.5rem;
+
+    transition: 0.2s;
+}
+
+header:hover{
+    transform: scale(1.01);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+
+    padding: 2rem 3rem;
+    margin: 1rem 0;
+
+    background-image: url(../imagens/geral/fundo-main-horizontal.webp);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    justify-content: center;
+    align-items: center; 
+}
+
+/* Aside */
+
+aside {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+aside > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Section */
+
+section {
+    flex: 1;
+    height: 100%;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 1rem;
+    
+    font-family: Georgia, 'Times New Roman', serif;
+    text-align: justify;
+    hyphens: auto;
+    line-height: 1.7;
+
+    scrollbar-color: #8a4a23 #ead3a2;
+}
+
+section > * {
+    margin: 0;
+}
+
+section > h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+section > h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+section > h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+section > p {
+    font-size: 1.2rem;
+    margin-bottom: 0.80rem;
+    text-indent: 2rem;
+}
+
+/* Imagens */
+
+figure {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.uma-imagem {   
+    align-items: center;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.duas-imagens {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.capa-de-livro{
+    height: 25rem;
+    object-fit: contain;
+    transition: 0.5s;
+}
+
+.capa-de-livro:hover{
+    transform: scale(1.03);
+}
+
+figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
+    color: #5a3218;
+    width: 100%;
+}
+
+/* Animações */
+
+aside > img {
+    animation: aparecer 1s;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+/* Adaptações */
+
+@media (orientation: portrait), (width < 900px){
+    aside {
+        display: none;
+    }
+    main {
+        background-image: url(../imagens/geral/fundo-main-vertical.webp);
+        padding: 1rem 1rem;
+    }
+    section {
+        height: 98%;
+    }
+    section > h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    section > h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    section > h3 {
+        font-size: 1rem;
+        margin-bottom: 0.35rem;
+    }
+
+    section > p {
+        font-size: 0.7rem;
+        margin-bottom: 0.40rem;
+        text-indent: 1rem;
+    }
+    figcaption {
+        font-size: 0.6rem;
+    }
+    .capa-de-livro{
+        height: 20rem;
+    }
+}
+
+@media (width < 400px){
+    main {
+        padding: 0.7rem 0.7rem;
+    }
+    section > h1 {
+        font-size: 2.2rem;
+        margin-bottom: 0.8rem;
+    }
+    section > h2 {
+        font-size: 1.6rem;
+        margin-bottom: 0.4rem;
+    }
+    section > h3 {
+        font-size: 1rem;
+        margin-bottom: 0.35rem;
+    }
+    section > p {
+        font-size: 0.7rem;
+        margin-bottom: 0.40rem;
+        text-indent: 0.8rem;
+    }
+    .capa-de-livro{
+        height: 15rem;
+    }
+    .duas-imagens {
+        gap: 1rem;
+    }
+}
