@@ -124,6 +124,10 @@ section > p {
     text-indent: 2rem;
 }
 
+section > .poema {
+    text-indent: 0;
+}
+
 /* Imagens */
 
 figure {
