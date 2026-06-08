@@ -24,6 +24,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     color: black;
 }
 
@@ -39,7 +40,6 @@ header > h2 {
     font-family: "EB Garamond", serif;
     font-style: italic;
     text-align: center;
-
 }
 
 /* Main */
